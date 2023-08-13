@@ -1,0 +1,105 @@
+object frmMenu: TfrmMenu
+  Left = 837
+  Height = 278
+  Top = 152
+  Width = 546
+  BorderStyle = bsSingle
+  Caption = 'Menu Principal - Sistema Empresarial'
+  ClientHeight = 258
+  ClientWidth = 546
+  Menu = Sair
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 120
+    Top = 0
+    Width = 546
+    Align = alTop
+    ClientHeight = 120
+    ClientWidth = 546
+    TabOrder = 0
+    object btnCadastroClientes: TSpeedButton
+      Cursor = crHandPoint
+      Left = 1
+      Height = 118
+      Top = 1
+      Width = 271
+      Align = alLeft
+      Caption = 'Cadastro de Clientes'
+      Flat = True
+      OnClick = btnCadastroClientesClick
+    end
+    object btnCadastroProdutos: TSpeedButton
+      Cursor = crHandPoint
+      Left = 275
+      Height = 118
+      Top = 1
+      Width = 271
+      Caption = 'Cadastro de Produtos'
+      Flat = True
+      OnClick = btnCadastroProdutosClick
+    end
+  end
+  object btnPDV: TSpeedButton
+    Cursor = crHandPoint
+    Left = 0
+    Height = 138
+    Top = 120
+    Width = 271
+    Align = alLeft
+    Caption = 'Ponto de Venda (PDV)'
+    Flat = True
+    OnClick = btnPDVClick
+  end
+  object btnPDV1: TSpeedButton
+    Cursor = crHandPoint
+    Left = 271
+    Height = 138
+    Top = 120
+    Width = 271
+    Align = alLeft
+    Caption = 'Contas a Receber'
+    Flat = True
+    OnClick = btnPDV1Click
+  end
+  object Sair: TMainMenu
+    Left = 352
+    Top = 88
+    object MenuItem1: TMenuItem
+      Caption = 'Cadastros'
+      object MenuItem2: TMenuItem
+        Caption = 'Cadastro de Clientes'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Cadastro de Produtos'
+        OnClick = MenuItem3Click
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Sair'
+      OnClick = MenuItem4Click
+    end
+  end
+  object qryUltimaChaveVenda: TZQuery
+    Connection = DataModule1.ZConnection1
+    SQL.Strings = (
+      'Select max(chave) +1 from vendas'
+    )
+    Params = <>
+    DataSource = DataModule1.dsVenda
+    Left = 296
+    Top = 88
+    object qryUltimaChaveVendaADD: TLargeintField
+      FieldKind = fkData
+      FieldName = 'ADD'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+  end
+end

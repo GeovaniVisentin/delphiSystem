@@ -1,0 +1,45 @@
+object frmContasaReceber: TfrmContasaReceber
+  Left = -866
+  Height = 532
+  Top = 243
+  Width = 549
+  Caption = 'Contas a Receber'
+  ClientHeight = 532
+  ClientWidth = 549
+  LCLVersion = '2.2.0.4'
+  object DBNavigator1: TDBNavigator
+    Left = 200
+    Height = 41
+    Top = 464
+    Width = 329
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 41
+    ClientWidth = 329
+    Options = []
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 24
+    Height = 164
+    Top = 264
+    Width = 504
+    Color = clWindow
+    Columns = <>
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 454
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,8 @@
+object frmCadastroProduto: TfrmCadastroProduto
+  Left = 374
+  Height = 240
+  Top = 145
+  Width = 320
+  Caption = 'frmCadastroProduto'
+  LCLVersion = '2.2.0.4'
+end

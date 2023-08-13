@@ -1,0 +1,69 @@
+object frmProcuraClientes: TfrmProcuraClientes
+  Left = -505
+  Height = 235
+  Top = 179
+  Width = 320
+  Caption = 'Clientes'
+  ClientHeight = 235
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.4'
+  object DGMostraClientes: TDBGrid
+    Left = 19
+    Height = 140
+    Top = 72
+    Width = 288
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'CHAVE'
+        FieldName = 'CHAVE'
+      end    
+      item
+        Title.Caption = 'NOME'
+        FieldName = 'NOME'
+      end    
+      item
+        Title.Caption = 'TIPO DE PESSOA'
+        FieldName = 'TIPO_DE_PESSOA'
+      end    
+      item
+        Title.Caption = 'ATIVO'
+        FieldName = 'ATIVO'
+      end    
+      item
+        Title.Caption = 'CPF/CNPJ'
+        FieldName = 'CPF_CNPJ'
+      end>
+    DataSource = DataModule1.dsClientes
+    ParentFont = False
+    TabOrder = 0
+  end
+  object btnBuscarClientes: TButton
+    Left = 232
+    Height = 23
+    Top = 20
+    Width = 75
+    Caption = 'Buscar'
+    OnClick = btnBuscarClientesClick
+    TabOrder = 1
+  end
+  object eProcuraClientes: TEdit
+    Left = 24
+    Height = 23
+    Top = 20
+    Width = 184
+    TabOrder = 2
+    Text = 'eProcuraClientes'
+  end
+  object qryProcuraClientes: TZQuery
+    Connection = DataModule1.ZConnection1
+    SQL.Strings = (
+      'SELECT chave, nome, tipo_de_pessoa, ativo, CPF_CNPJ FROM CLIENTES'
+    )
+    Params = <>
+    DataSource = DataModule1.dsClientes
+    Left = 208
+    Top = 56
+  end
+end

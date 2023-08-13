@@ -1,0 +1,134 @@
+object frmCadastroProduto: TfrmCadastroProduto
+  Left = -1291
+  Height = 550
+  Top = 272
+  Width = 1054
+  Caption = 'Cadastro de Produtos'
+  ClientHeight = 550
+  ClientWidth = 1054
+  LCLVersion = '2.2.0.4'
+  WindowState = wsMaximized
+  object Panel2: TPanel
+    Left = 0
+    Height = 74
+    Top = 0
+    Width = 1054
+    Align = alTop
+    BorderStyle = bsSingle
+    ClientHeight = 70
+    ClientWidth = 1050
+    TabOrder = 0
+    object Label2: TLabel
+      Left = 208
+      Height = 15
+      Top = 32
+      Width = 44
+      Caption = 'Buscar : '
+    end
+    object EditBuscaProdutos: TEdit
+      Left = 264
+      Height = 23
+      Top = 24
+      Width = 368
+      OnChange = EditBuscaProdutosChange
+      TabOrder = 0
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 476
+    Top = 74
+    Width = 154
+    Align = alLeft
+    ClientHeight = 476
+    ClientWidth = 154
+    TabOrder = 1
+    object brnInserirProduto: TButton
+      Left = 8
+      Height = 56
+      Top = 8
+      Width = 127
+      Caption = 'Inserir'
+      OnClick = brnInserirProdutoClick
+      TabOrder = 0
+    end
+    object btnAlterarProduto: TButton
+      Left = 8
+      Height = 56
+      Top = 72
+      Width = 127
+      Caption = 'Alterar'
+      OnClick = btnAlterarProdutoClick
+      TabOrder = 1
+    end
+    object btnExcluirProduto: TButton
+      Left = 8
+      Height = 57
+      Top = 144
+      Width = 127
+      Caption = 'Excluir'
+      OnClick = btnExcluirProdutoClick
+      TabOrder = 2
+    end
+  end
+  object DBGrid2: TDBGrid
+    Left = 154
+    Height = 476
+    Top = 74
+    Width = 900
+    Align = alClient
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'CHAVE'
+        FieldName = 'CHAVE'
+      end    
+      item
+        Title.Caption = 'DESCRICAO'
+        Width = 300
+        FieldName = 'DESCRICAO'
+      end    
+      item
+        Title.Caption = 'PRECO DE COMPRA'
+        FieldName = 'PRECO_COMPRA'
+      end    
+      item
+        Title.Caption = 'PRECO DE VENDA'
+        FieldName = 'PRECO_VENDA'
+      end    
+      item
+        Title.Caption = 'ESTOQUE'
+        Width = 60
+        FieldName = 'ESTOQUE'
+      end    
+      item
+        Title.Caption = 'CODIGO DE BARRAS'
+        Width = 200
+        FieldName = 'CODIGO_BARRAS'
+      end>
+    DataSource = DataModule1.dsProdutos
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgHeaderHotTracking, dgHeaderPushedLook]
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object qryUltimaChaveProduto: TZQuery
+    Connection = DataModule1.ZConnection1
+    SQL.Strings = (
+      'select max(chave) +1 from produtos'
+    )
+    Params = <>
+    DataSource = DataModule1.dsProdutos
+    Left = 56
+    Top = 24
+    object qryUltimaChaveProdutoADD: TLargeintField
+      FieldKind = fkData
+      FieldName = 'ADD'
+      Index = 0
+      LookupCache = False
+      LookupDataSet = DataModule1.tb_produtos
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+  end
+end

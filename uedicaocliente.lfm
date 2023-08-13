@@ -1,0 +1,8 @@
+object frmEdicaoCliente: TfrmEdicaoCliente
+  Left = 1690
+  Height = 240
+  Top = 143
+  Width = 320
+  Caption = 'frmEdicaoCliente'
+  LCLVersion = '2.2.0.4'
+end

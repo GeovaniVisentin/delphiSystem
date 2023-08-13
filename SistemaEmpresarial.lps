@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="SistemaEmpresarial.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="26"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umenu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMenu"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMenu"/>
+        <TopLine Value="32"/>
+        <CursorPos X="21" Y="38"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udatamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModule1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="uDataModule"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="27" Y="4"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucadclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCadastroClientes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCadClientes"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="67"/>
+        <CursorPos X="59" Y="86"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ufrmedicaocliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEdicaoCliente"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ufrmEdicaoCliente"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="87"/>
+        <CursorPos X="113" Y="76"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucadproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCadastroProduto"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="74"/>
+        <CursorPos X="17" Y="42"/>
+        <UsageCount Value="132"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uedicaoproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEdicaoProduto"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uedicaoProduto"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="42"/>
+        <CursorPos X="20" Y="58"/>
+        <UsageCount Value="130"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="updv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPdv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="75"/>
+        <CursorPos X="21" Y="52"/>
+        <UsageCount Value="90"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uedicaoitemvenda.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEdicaoItemVenda"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEdicaoItemVenda"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="54"/>
+        <CursorPos X="33" Y="59"/>
+        <UsageCount Value="80"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucontasareceber.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmContasaReceber"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uContasaReceber"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="10"/>
+        <CursorPos X="23" Y="40"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uprocuraclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProcuraClientes"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uProcuraClientes"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="23"/>
+        <CursorPos X="3" Y="54"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uedicaocliente.pas"/>
+        <UnitName Value="ufrmEdicaoCliente"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\buttons.pp"/>
+        <UnitName Value="Buttons"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="14" Y="1524"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="G:\Downloads\src\component\ZDataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="95"/>
+        <CursorPos X="14" Y="108"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="G:\Downloads\src\component\ZAbstractTable.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="75"/>
+        <CursorPos X="14" Y="87"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="G:\Downloads\packages\lazarus\zcore.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3"/>
+        <UsageCount Value="4"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\fpc\3.2.2\source\rtl\objpas\sysutils\datih.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9"/>
+        <CursorPos X="10" Y="128"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\fpc\3.2.2\source\packages\fcl-db\src\base\dataset.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1739"/>
+        <CursorPos X="19" Y="1759"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\Users\Alan\Downloads\fortesreport-3.24-LCL-R2\rlmetavcl.pas"/>
+        <UnitName Value="RLMetaVCL"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="246"/>
+        <CursorPos X="16" Y="263"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\Users\Alan\Downloads\zeosdbo-7.2.14-stable\src\plain\ZPlainLoader.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="234"/>
+        <CursorPos Y="250"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="ucontasareceber.pas"/>
+        <Caret Line="6" Column="48"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="33" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="34" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="35" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="updv.pas"/>
+        <Caret Line="101" Column="57" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="37" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="43" Column="15" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="44" Column="35" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="18" Column="87" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="17" Column="89" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="18" Column="87" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="17" Column="89" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="44" Column="4" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="45" Column="64" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="50" Column="71" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="49" Column="71" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="50" Column="3" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="34" Column="18" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="51" Column="28" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="umenu.pas"/>
+        <Caret Line="57" Column="34" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="umenu.pas"/>
+        <Caret Line="56" Column="3" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="SistemaEmpresarial.lpr"/>
+        <Caret Line="26"/>
+      </Position>
+      <Position>
+        <Filename Value="uedicaoproduto.pas"/>
+        <Caret Line="58" Column="20" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="uprocuraclientes.pas"/>
+        <Caret Line="54" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="udatamodule.pas"/>
+        <Caret Line="57" Column="21" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="udatamodule.pas"/>
+        <Caret Line="58" Column="24" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="udatamodule.pas"/>
+        <Caret Line="12" Column="78"/>
+      </Position>
+      <Position>
+        <Filename Value="udatamodule.pas"/>
+        <Caret Line="4" Column="27"/>
+      </Position>
+      <Position>
+        <Filename Value="ucadclientes.pas"/>
+        <Caret Line="86" Column="59" TopLine="67"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

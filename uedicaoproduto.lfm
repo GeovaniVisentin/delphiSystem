@@ -1,0 +1,174 @@
+object frmEdicaoProduto: TfrmEdicaoProduto
+  Left = -916
+  Height = 458
+  Top = 206
+  Width = 601
+  BorderStyle = bsSingle
+  Caption = 'Cadastro de Produto'
+  ClientHeight = 458
+  ClientWidth = 601
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.0.4'
+  object Label1: TLabel
+    Left = 25
+    Height = 15
+    Top = 32
+    Width = 38
+    Caption = 'CHAVE'
+  end
+  object DBEdit1: TDBEdit
+    Left = 25
+    Height = 23
+    Top = 48
+    Width = 48
+    DataField = 'CHAVE'
+    DataSource = DataModule1.dsProdutos
+    ReadOnly = True
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 25
+    Height = 15
+    Top = 88
+    Width = 63
+    Caption = 'DESCRIÇÂO'
+  end
+  object DBEdit2: TDBEdit
+    Left = 25
+    Height = 23
+    Top = 104
+    Width = 423
+    DataField = 'DESCRICAO'
+    DataSource = DataModule1.dsProdutos
+    MaxLength = 400
+    TabOrder = 1
+  end
+  object btnSalvar: TSpeedButton
+    Left = 160
+    Height = 54
+    Top = 376
+    Width = 126
+    Caption = 'Salvar'
+    OnClick = btnSalvarClick
+  end
+  object btnCancelar: TSpeedButton
+    Left = 293
+    Height = 54
+    Top = 376
+    Width = 126
+    Caption = 'Cancelar'
+    OnClick = btnCancelarClick
+  end
+  object DBEdit3: TDBEdit
+    Left = 104
+    Height = 23
+    Top = 48
+    Width = 471
+    DataField = 'CODIGO_BARRAS'
+    DataSource = DataModule1.dsProdutos
+    MaxLength = 60
+    TabOrder = 2
+  end
+  object Label3: TLabel
+    Left = 104
+    Height = 15
+    Top = 32
+    Width = 108
+    Caption = 'CÓDIGO DE BARRAS'
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 15
+    Top = 160
+    Width = 107
+    Caption = 'PREÇO DE COMPRA'
+  end
+  object DBEdit4: TDBEdit
+    Left = 24
+    Height = 23
+    Top = 176
+    Width = 136
+    DataField = 'PRECO_COMPRA'
+    DataSource = DataModule1.dsProdutos
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 3
+  end
+  object Label5: TLabel
+    Left = 400
+    Height = 15
+    Top = 160
+    Width = 95
+    Caption = 'PREÇO DE VENDA'
+  end
+  object DBEdit5: TDBEdit
+    Left = 400
+    Height = 23
+    Top = 176
+    Width = 175
+    DataField = 'PRECO_VENDA'
+    DataSource = DataModule1.dsProdutos
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 4
+  end
+  object DBMemo1: TDBMemo
+    Left = 23
+    Height = 104
+    Top = 240
+    Width = 552
+    DataField = 'OBSERVACAO'
+    DataSource = DataModule1.dsProdutos
+    TabOrder = 5
+  end
+  object DBEdit6: TDBEdit
+    Left = 200
+    Height = 23
+    Top = 176
+    Width = 160
+    DataField = 'ESTOQUE'
+    DataSource = DataModule1.dsProdutos
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 6
+  end
+  object Label6: TLabel
+    Left = 200
+    Height = 15
+    Top = 160
+    Width = 51
+    Caption = 'ESTOQUE'
+  end
+  object DBComboBox1: TDBComboBox
+    Left = 475
+    Height = 23
+    Top = 104
+    Width = 100
+    DataField = 'UNIDADE'
+    DataSource = DataModule1.dsProdutos
+    DropDownCount = 3
+    ItemHeight = 15
+    Items.Strings = (
+      'UN'
+      'KG'
+      'M2'
+      'M3'
+      'MT'
+      'LB'
+      'LT'
+    )
+    MaxLength = 0
+    TabOrder = 7
+  end
+  object Label7: TLabel
+    Left = 25
+    Height = 15
+    Top = 224
+    Width = 75
+    Caption = 'OBSERVAÇÂO'
+  end
+end

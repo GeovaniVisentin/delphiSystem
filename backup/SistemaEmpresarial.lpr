@@ -1,0 +1,28 @@
+program SistemaEmpresarial;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}
+  cthreads,
+  {$ENDIF}
+  {$IFDEF HASAMIGA}
+  athreads,
+  {$ENDIF}
+  Interfaces, // this includes the LCL widgetset
+  Forms, zcomponent, uMenu, uDataModule, uCadClientes, ufrmEdicaoCliente
+  { you can add units after this };
+
+{$R *.res}
+
+begin
+  RequireDerivedFormResource:=True;
+  Application.Scaled:=True;
+  Application.Initialize;
+  Application.CreateForm(TfrmMenu, frmMenu);
+  Application.CreateForm(TfrmCadastroClientes, frmCadastroClientes);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TfrmEdicaoCliente, frmEdicaoCliente);
+  Application.Run;
+end.
+
